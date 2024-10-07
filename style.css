@@ -1,0 +1,84 @@
+#search_bar {
+    width: 100%;
+    box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la largeur totale de l'élément */
+    margin-bottom: 7px; /* Ajoute un espace en dessous de la barre de recherche */
+}
+
+#search_bar input[type="text"] {
+    width: 100%;
+    padding: 4px; /* Réduit le padding */
+    box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans la largeur totale de l'élément */
+}
+
+#stocks {
+    margin-bottom: 10px; /* Ajoute un espace en dessous de la case à cocher */
+}
+
+label[for="stocks"] {
+    margin-left: 5px; /* Ajoute un espace à gauche du label */
+    margin-bottom: 7px; /* Ajoute un espace en dessous du label */
+    display: inline-block; /* Assure que le margin-bottom fonctionne */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 7px; /* Ajoute un espace au-dessus du tableau */
+}
+
+th, td {
+    border: 1px solid #bfbfbf;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+th:first-child, td:first-child {
+    width: 15%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 100%;
+}
+
+.item-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+}
+
+.name {
+    min-width: 100px; /* Reduced width for name */
+    margin-right: 10px; /* Reduced margin after the name */
+}
+
+.price {
+    min-width: 200px; /* Increased width for price */
+    margin-right: 30px; /* Added margin after the price */
+    flex-shrink: 0; /* Prevents the price from shrinking */
+}
+
+.tabbed-text {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tabbed-text .name {
+    min-width: 100px; /* Reduced width for name */
+    margin-right: 10px; /* Reduced margin after the name */
+}
+
+.out-of-stock {
+    color: red; /* Red color for out-of-stock items */
+}
