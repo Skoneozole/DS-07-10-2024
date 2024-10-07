@@ -30,8 +30,8 @@ async function displayProducts() {
     const produit = await fetchData();
     const array = sortProductsAlphabetically(produit);
 
-    // Filtrer les éléments dont le "name" contient le texte de recherche
-    let filteredData = array.filter(item => item.name.toLowerCase().includes(searchText));
+    // Filtrer les éléments dont le "name" commence par le texte de recherche
+    let filteredData = array.filter(item => item.name.toLowerCase().startsWith(searchText));
 
     // Filtrer les éléments en stock si la case est cochée
     if (showOnlyStocked) {
